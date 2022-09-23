@@ -33,6 +33,16 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--許願板輪播套件https://blog.7netic.com/2017/11/16/%E8%BC%95%E9%AC%86%E4%BD%BF%E7%94%A8jquery-%E5%9C%96%E7%89%87%E8%BC%AA%E6%92%AD%E5%A4%96%E6%8E%9B-owl-carousel-%E5%B5%8C%E5%85%A5%E8%87%B3%E7%B6%B2%E9%A0%81%E8%88%87%E9%83%A8%E8%90%BD%E6%A0%BC/-->
+    <!-- owl.carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</link>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <style>
         #about {
             background-image: url(gif/背景-01-01-01.png);
@@ -144,6 +154,10 @@
                     <li><a class="nav-link scrollto" href="#pray">求籤</a></li>
                     <li><a class="nav-link scrollto" href="">解籤</a></li>
                     <li><a class="nav-link scrollto" href="#wish">許願池</a></li>
+                    <li>
+                        <button class="getstarted button1" onclick="document.getElementById('id01').style.display='block'" 
+                            style="width: 125px; padding-top: 7px;">登入/註冊</button>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -337,19 +351,20 @@
                     <div class="col-12 justify-content-center">
                         <div class="col-12 owl-carousel owl-theme">
                             <!--總共12張輪波-->
-                            <div class="item" style="max-width: 250px; margin-right: 10px;">
+                            <div class="item d-inline" style="max-width: 250px; margin-right: 10px;">
                                 <table width="250px" height="250px" class="wishboard">
                                     <tr>
                                         <td class="sentence">
                                             <h3 class="py-2">絲扇淒許願池<br></h3>
                                             <h5 class="pt-2">希望在這邊你能勇敢大聲地說出你的願望</h5>
-                                            <h5 class="pt-3 align-content-center"><a href="wish.php"
-                                                    class="btn-get-started scrollto enterwish">前往許願</a></h5>
+                                            <h5 class="pt-3 align-content-center">
+                                                <a href="" class="btn-get-started scrollto enterwish">前往許願</a>
+                                            </h5>
                                         </td>
                                     </tr>
                                 </table>
                             </div>
-                            <div class="item" style="max-width: 250px; margin-right: 10px;">
+                            <div class="item d-inline" style="max-width: 250px; margin-right: 10px;">
                                 <table width="250px" height="250px" class="wishboard">
                                     <th height="30px" class="name">selina</th>
                                     <tr>
@@ -360,7 +375,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="item" style="max-width: 250px; margin-right: 10px;">
+                            <div class="item d-inline" style="max-width: 250px; margin-right: 10px;">
                                 <table width="250px" height="250px" class="wishboard">
                                     <th height="30px" class="name">selina</th>
                                     <tr>
@@ -371,7 +386,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="item" style="max-width: 250px; margin-right: 10px;">
+                            <div class="item d-inline" style="max-width: 250px; margin-right: 10px;">
                                 <table width="250px" height="250px" class="wishboard">
                                     <th height="30px" class="name">selina</th>
                                     <tr>
@@ -382,7 +397,7 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="item" style="max-width: 250px; margin-right: 10px;">
+                            <div class="item d-inline" style="max-width: 250px; margin-right: 10px;">
                                 <table width="250px" height="250px" class="wishboard">
                                     <th height="30px" class="name">selina</th>
                                     <tr>
@@ -393,13 +408,10 @@
                                     </tr>
                                 </table>
                             </div>
+
                         </div>
                     </div>
                 </div>
-
-
-            </div>
-            </div>
         </section><!-- End Clients Section -->
     </main><!-- End #main -->
 
