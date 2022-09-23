@@ -151,7 +151,7 @@
         </div>
     </header>
     <!--End Header -->
-    
+
     <!-- ======= Banner Section ======= -->
     <div id="bg-img" class="align-items-center" style="margin-top: 0px;">
         <div class="row">
@@ -357,15 +357,13 @@
             }
         })
     </script>
-    <!--verify-->
-    <?php
-  include ("verify.html");
-  ?>
-    <!--verify end-->
-    <?php
-  include ("template.php");
-  echo $mainjs ;
-  ?>
+    <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $('body').addClass('loaded');
+        });
+    </script>
 
 </body>
 
