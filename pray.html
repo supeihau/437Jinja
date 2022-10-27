@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>絲扇淒神社</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="vendor/aos/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="vendor/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--頁面載入-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <!--表單驗證-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+
+    <!--additional method - for checkbox .. ,require_from_group method ...-->
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+
+    <!--中文錯誤訊息-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/localization/messages_zh_TW.js "></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            background-color: #fef8f5;
+        }
+
+        @media screen and (max-width: 992px) {
+
+            html,
+            body {
+                background-image: url('gif/left-01-01.png');
+                background-size: 100% 100%;
+            }
+        }
+
+        section {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .prayBtn {
+            background-color: #eb5d1e;
+            color: #fef8f5;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 40px;
+            padding-right: 40px;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+        .prayBtn:hover{
+            background-color: #eb5d1e;
+            color: #fef8f5;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 40px;
+            padding-right: 40px;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+        .prayBtn:focus{
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="container-fluid" style="padding-left: 0px;">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-film mr-2"></i>
+                    絲扇淒神社
+                </a>
+            </div>
+
+            <nav id="navbar" class="navbar" style="z-index: 999;">
+                <ul class="navbarStyle" style="padding-right: 0px; margin-right: 12px;">
+                    <li><a class="nav-link scrollto active" href="first.html">首頁</a></li>
+                    <li><a class="nav-link scrollto" href="first.html">介紹</a></li>
+                    <li><a class="nav-link scrollto" href="first.html#store">小舖</a></li>
+                    <li><a class="nav-link scrollto" href="first.html#pray">求籤</a></li>
+                    <li><a class="nav-link scrollto" href="">解籤</a></li>
+                    <li><a class="nav-link scrollto" href="first.html#wish">許願池</a></li>
+                    <li>
+                        <button class="getstarted button1"
+                            onclick="document.getElementById('id01').style.display='block'"
+                            style="width: 125px; padding-top: 7px;">登入/註冊</button>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+
+    <section class="d-flex align-items-center">
+        <div class="container">
+            <div class="row gy-4 pt-lg-5 pt-3">
+                <div class="d-none d-lg-block col-lg-3 d-flex flex-column justify-content-center mt-1">
+                    <img src="gif/left-01-01.png" class="img-fluid " alt="">
+                </div>
+                <div class="col-sm-12 col-lg-6 mt-5">
+                    <img class="gif draw img-fluid" type="image" src="img/求籤2.gif" alt="Image" width="400">
+                    <div id="input" class="text-center">
+                        <button type="button" class="btn draw prayBtn mt-5">抽籤</button>
+                    </div>
+                    <h5 id="result" class="text-center"></h5>
+                </div>
+                <div class="d-none d-lg-block col-lg-3 mt-1">
+                    <img src="gif/right-01.png" class="img-fluid " alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(function () {
+            $("#input button.draw").click(function () {
+                $(".gif").attr("src", "img/求籤3.gif");
+                $("#input button.draw").toggle();
+                var _result = $("#result").empty();
+                $fortune = Math.floor(1 + Math.random() * 99);
+                _result.append('<div class="mt-5 mb-3">恭喜抽中第' + $fortune + '支籤~</div><div class="text-center"><a href="fortune_poem.php?id=' + $fortune + '" class="btn prayBtn mt-3">前往解籤</a></div>');
+            });
+        });
+    </script>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/php-email-form/validate.js"></script>
+    <!--mainjs-->
+    <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+
+</html>
