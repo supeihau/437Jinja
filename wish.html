@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>絲扇淒神社</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="vendor/aos/aos.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="vendor/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--頁面載入-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <!--表單驗證-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+
+    <!--additional method - for checkbox .. ,require_from_group method ...-->
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+
+    <!--中文錯誤訊息-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/localization/messages_zh_TW.js "></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            background-color: #fef8f5;
+        }
+
+        @media screen {
+
+            html,
+            body {
+                background-image: url('gif/left-01-01.png');
+                background-size: 100% 100%;
+            }
+        }
+
+        .wishBtn {
+            background-color: #eb5d1e;
+            color: #fef8f5;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 40px;
+            padding-right: 40px;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+
+        .wishBtn:hover {
+            background-color: #eb5d1e;
+            color: #fef8f5;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 40px;
+            padding-right: 40px;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+
+        .wishBtn:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="container-fluid" style="padding-left: 0px;">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-film mr-2"></i>
+                    絲扇淒神社
+                </a>
+            </div>
+
+            <nav id="navbar" class="navbar" style="z-index: 999;">
+                <ul class="navbarStyle" style="padding-right: 0px; margin-right: 12px;">
+                    <li><a class="nav-link scrollto active" href="first.html">首頁</a></li>
+                    <li><a class="nav-link scrollto" href="first.html">介紹</a></li>
+                    <li><a class="nav-link scrollto" href="storePage.html">小舖</a></li>
+                    <li><a class="nav-link scrollto" href="pray.html">求籤</a></li>
+                    <li><a class="nav-link scrollto" href="fortune_poem.html">解籤</a></li>
+                    <li><a class="nav-link scrollto" href="wish.html">許願池</a></li>
+                    <li>
+                        <button class="getstarted button1"
+                            onclick="document.getElementById('id01').style.display='block'"
+                            style="width: 125px; padding-top: 7px;">登入/註冊</button>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+
+    <section class="d-flex align-items-center pt-4 pt-lg-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="text-center">願您能在其中得到力量</h5>
+                    <p class="text-center mt-4 mb-4">
+                        人生就像一場戲，因為有緣才相聚。相扶到老不容易，是否更該去珍惜。<br>
+                        為了小事發脾氣，回頭想想又何必。別人生氣我不氣，氣出病來無人替。<br>
+                        我若氣死誰如意，況且傷神又費力。鄰居親朋不要比，兒孫瑣事由他去。<br>
+                        吃苦享樂在一起，神仙羨慕好伴侶。 
+                    </p>
+                    <form id="contact-form" action="wish_finish.php" method="POST" 
+                        class="mt-4 mb-4 text-center">
+                        <div class="form-group d-flex justify-content-center">
+                            <textarea rows="8" name="message" class="form-control rounded-0" placeholder="祈願..."
+                                required style="max-width: 400px;"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn wishBtn">寄送</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="d-flex align-items-center">
+        <div class="container">
+            <div class="row gy-4 pt-lg-5 pt-5">
+                <div class="col-lg-6 col-12 d-flex justify-content-center text-center">
+                    <div class="">
+                        <h2 class="tm-text-primary mb-5 text-center">願您能在其中得到力量</h2>
+                        <p class="tm-mb-30">人生就像一場戲，因為有緣才相聚。
+
+                            相扶到老不容易，是否更該去珍惜。
+
+                            為了小事發脾氣，回頭想想又何必。
+
+                            別人生氣我不氣，氣出病來無人替。
+
+                            我若氣死誰如意，況且傷神又費力。
+
+                            鄰居親朋不要比，兒孫瑣事由他去。
+
+                            吃苦享樂在一起，神仙羨慕好伴侶。 </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 justify-content-center text-center">
+                    <h2 class="tm-text-primary mb-5 text-center">許願籤</h2>
+                    <form id="contact-form" action="wish_finish.php" method="POST" class="tm-contact-form mx-auto">
+                        <div class="form-group">
+                            <textarea rows="8" name="message" class="form-control rounded-0" placeholder="祈願..." required=></textarea>
+                        </div>
+    
+                        <div class="form-group tm-text-right">
+                            <button type="submit" class="btn btn-primary">寄送</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/php-email-form/validate.js"></script>
+    <!--mainjs-->
+    <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+
+</html>
