@@ -124,7 +124,7 @@
                     <li><a class="nav-link scrollto" href="first.html">介紹</a></li>
                     <li><a class="nav-link scrollto" href="storePage.html">小舖</a></li>
                     <li><a class="nav-link scrollto" href="pray.html">求籤</a></li>
-                    <li><a class="nav-link scrollto" href="">解籤</a></li>
+                    <li><a class="nav-link scrollto" href="fortune_poem.html">解籤</a></li>
                     <li><a class="nav-link scrollto" href="wish.html">許願池</a></li>
                     <li>
                         <button class="getstarted button1"
@@ -144,9 +144,11 @@
                 <div class="d-none d-lg-block col-lg-3 d-flex flex-column justify-content-center mt-1">
                     <img src="gif/left-01-01.png" class="img-fluid " alt="">
                 </div>
-                <div class="col-sm-12 col-lg-6 mt-5">
-                    <img class="gif draw img-fluid" type="image" src="img/求籤2.gif" alt="Image" width="400">
-                    <div id="input" class="text-center">
+                <div class="col-sm-12 col-lg-6 mt-5 justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <img class="gif draw img-fluid" type="image" src="img/求籤2.gif" alt="Image" width="400">
+                    </div>
+                    <div id="input" class="d-flex justify-content-center">
                         <button type="button" class="btn draw prayBtn mt-5">抽籤</button>
                     </div>
                     <h5 id="result" class="text-center"></h5>
@@ -165,7 +167,7 @@
                 $("#input button.draw").toggle();
                 var _result = $("#result").empty();
                 $fortune = Math.floor(1 + Math.random() * 99);
-                _result.append('<div class="mt-5 mb-3">恭喜抽中第' + $fortune + '支籤~</div><div class="text-center"><a href="fortune_poem.php?id=' + $fortune + '" class="btn prayBtn mt-3">前往解籤</a></div>');
+                _result.append('<div class="mt-5 mb-3">恭喜抽中第' + $fortune + '支籤~</div><div class="text-center"><a href="/fortune_poem.html" class="btn prayBtn mt-3">前往解籤</a></div>');
             });
         });
     </script>
