@@ -32,21 +32,13 @@
     <link rel="stylesheet" href="css/templatemo-style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!--頁面載入-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-    <!--表單驗證-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
-
-    <!--additional method - for checkbox .. ,require_from_group method ...-->
-    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
-
-    <!--中文錯誤訊息-->
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/localization/messages_zh_TW.js "></script>
     <style>
+        #main {
+            margin-top: 0px;
+        }
+
         html,
         body {
             margin: 0;
@@ -54,7 +46,7 @@
             background-color: #fef8f5;
         }
 
-        @media screen {
+        @media screen and (max-width: 992px){
 
             html,
             body {
@@ -90,6 +82,16 @@
         .wishBtn:focus {
             box-shadow: none;
         }
+
+        section {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
     </style>
 </head>
 
@@ -131,32 +133,33 @@
         </div>
     </header>
 
-    <section class="d-flex align-items-center pt-4 pt-lg-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="text-center">願您能在其中得到力量</h5>
-                    <p class="text-center mt-4 mb-4">
-                        人生就像一場戲，因為有緣才相聚。相扶到老不容易，是否更該去珍惜。<br>
-                        為了小事發脾氣，回頭想想又何必。別人生氣我不氣，氣出病來無人替。<br>
-                        我若氣死誰如意，況且傷神又費力。鄰居親朋不要比，兒孫瑣事由他去。<br>
-                        吃苦享樂在一起，神仙羨慕好伴侶。 
-                    </p>
-                    <form id="contact-form" action="wish_finish.php" method="POST" 
-                        class="mt-4 mb-4 text-center">
-                        <div class="form-group d-flex justify-content-center">
-                            <textarea rows="8" name="message" class="form-control rounded-0" placeholder="祈願..."
-                                required style="max-width: 400px;"></textarea>
-                        </div>
+    <main id="main">
+        <section class="d-flex align-items-center">
+            <div class="container">
+                <div class="row gy-4 pt-lg-5 pt-3">
+                    <div class="col-12 mt-5 justify-content-center">
+                        <h5 class="text-center">願您能在其中得到力量</h5>
+                        <p class="text-center mt-4 mb-4">
+                            人生就像一場戲，因為有緣才相聚。相扶到老不容易，是否更該去珍惜。<br>
+                            為了小事發脾氣，回頭想想又何必。別人生氣我不氣，氣出病來無人替。<br>
+                            我若氣死誰如意，況且傷神又費力。鄰居親朋不要比，兒孫瑣事由他去。<br>
+                            吃苦享樂在一起，神仙羨慕好伴侶。
+                        </p>
+                        <form id="contact-form" action="wish_finish.php" method="POST" class="mt-4 mb-4 text-center">
+                            <div class="form-group d-flex justify-content-center">
+                                <textarea rows="8" name="message" class="form-control rounded-0" placeholder="祈願..."
+                                    required style="max-width: 400px;"></textarea>
+                            </div>
 
-                        <div class="form-group">
-                            <button type="submit" class="btn wishBtn">寄送</button>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <button type="submit" class="btn wishBtn">寄送</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- <section class="d-flex align-items-center">
         <div class="container">

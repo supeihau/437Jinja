@@ -8,6 +8,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  footer{
+    display: none;
+  }
+}
+
+#word {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #212529;

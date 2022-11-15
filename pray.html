@@ -32,21 +32,13 @@
     <link rel="stylesheet" href="css/templatemo-style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!--頁面載入-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-    <!--表單驗證-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
-
-    <!--additional method - for checkbox .. ,require_from_group method ...-->
-    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
-
-    <!--中文錯誤訊息-->
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/localization/messages_zh_TW.js "></script>
     <style>
+        #main {
+            margin-top: 0px;
+        }
+
         html,
         body {
             margin: 0;
@@ -83,7 +75,8 @@
             letter-spacing: 1px;
             font-size: 16px;
         }
-        .prayBtn:hover{
+
+        .prayBtn:hover {
             background-color: #eb5d1e;
             color: #fef8f5;
             border-radius: 20px;
@@ -94,7 +87,8 @@
             letter-spacing: 1px;
             font-size: 16px;
         }
-        .prayBtn:focus{
+
+        .prayBtn:focus {
             box-shadow: none;
         }
     </style>
@@ -137,28 +131,52 @@
             <!-- .navbar -->
         </div>
     </header>
+    <!--End Header -->
 
-    <section class="d-flex align-items-center">
-        <div class="container">
-            <div class="row gy-4 pt-lg-5 pt-3">
-                <div class="d-none d-lg-block col-lg-3 d-flex flex-column justify-content-center mt-1">
-                    <img src="gif/left-01-01.png" class="img-fluid " alt="">
-                </div>
-                <div class="col-sm-12 col-lg-6 mt-5 justify-content-center">
-                    <div class="d-flex justify-content-center">
-                        <img class="gif draw img-fluid" type="image" src="img/求籤2.gif" alt="Image" width="400">
+    <main id="main">
+        <section class="d-flex align-items-center">
+            <div class="container">
+                <div class="row gy-4 pt-lg-5 pt-3">
+                    <div class="d-none d-lg-block col-lg-3 d-flex flex-column justify-content-center mt-1">
+                        <img src="gif/left-01-01.png" class="img-fluid " alt="">
                     </div>
-                    <div id="input" class="d-flex justify-content-center">
-                        <button type="button" class="btn draw prayBtn mt-5">抽籤</button>
+                    <div class="col-sm-12 col-lg-6 mt-5 justify-content-center">
+                        <div class="d-flex justify-content-center">
+                            <img class="gif draw img-fluid" type="image" src="img/求籤2.gif" alt="Image" width="400">
+                        </div>
+                        <div id="input" class="d-flex justify-content-center">
+                            <button type="button" class="btn draw prayBtn mt-5">抽籤</button>
+                        </div>
+                        <h5 id="result" class="text-center"></h5>
                     </div>
-                    <h5 id="result" class="text-center"></h5>
-                </div>
-                <div class="d-none d-lg-block col-lg-3 mt-1">
-                    <img src="gif/right-01.png" class="img-fluid " alt="">
+                    <div class="d-none d-lg-block col-lg-3 mt-1">
+                        <img src="gif/right-01.png" class="img-fluid " alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/php-email-form/validate.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $('body').addClass('loaded');
+        });
+    </script>
+
+    <!--mainjs-->
+    <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
 
     <script>
         $(function () {
@@ -172,7 +190,6 @@
         });
     </script>
 
-
     <script>
         // Get the modal
         var modal = document.getElementById('id01');
@@ -183,25 +200,6 @@
                 modal.style.display = "none";
             }
         }
-    </script>
-
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Vendor JS Files -->
-    <script src="vendor/aos/aos.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="vendor/php-email-form/validate.js"></script>
-    <!--mainjs-->
-    <script src="js/main.js"></script>
-    <script src="js/plugins.js"></script>
-    <script>
-        $(window).on("load", function () {
-            $('body').addClass('loaded');
-        });
     </script>
 </body>
 
