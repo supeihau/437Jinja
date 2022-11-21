@@ -1,6 +1,10 @@
-Thanks for downloading this template!
+# 437Jinja 絲扇凄神社 
 
-Template Name: Ninestars
-Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+疫情不能出國，因此和同學一起發想出假想神社網站，希望使用者可以透過此網站體驗到日本參拜的感覺。
+這是一款利用Bootatrap5框架設計的平台介面(電腦網頁版&手機RWD版)，其中包含販賣紀念品的商城、抽籤、解籤、撰寫許願版的體驗，讓使用者得到一些心靈救贖，解解出國愁。
+
+## 啟用
+
+以 [https://supeihau.github.io/437Jinja/index.html] 查看網頁效果，各按鈕都有連結至該頁頁面，希望您有個良好的參拜體驗。
+
+
