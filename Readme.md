@@ -21,6 +21,10 @@
 
 ![image](https://user-images.githubusercontent.com/98528149/203081066-2ee81190-5e77-4596-9b2a-62948599482a.png)
 
+解籤頁：籤詩查詢
+
+![image](https://user-images.githubusercontent.com/98528149/203081821-8dc5d1cb-8798-435d-a6c6-5d5e37fb1a11.png)
+
 許願版：使用者可以進行許願，並顯示於首頁上
 
 ![image](https://user-images.githubusercontent.com/98528149/203081174-64e43a4a-6f4b-4296-93fa-9998a2a6012a.png)
